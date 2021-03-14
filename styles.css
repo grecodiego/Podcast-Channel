@@ -303,7 +303,7 @@ iframe {
 }
 .imgPhone {
     display: flex;
-    min-width: 320px;
+    min-width: 315px;
     max-width: 60%;
     transform: translateY(-120px);
     margin-bottom: -80px;
