@@ -49,7 +49,7 @@ a:link, a:visited, a:active {
 .box-general {
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 320px;
     align-items: center;
     border: none;
     overflow: hidden;
