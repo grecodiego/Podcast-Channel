@@ -120,6 +120,7 @@ header {
     display: flex;
     flex-direction: column;
     padding-bottom: 24px;
+    padding-right: 16px;
 
 
 }
@@ -444,6 +445,7 @@ margin-bottom: 36px;
         width: 288px;
         height: 56px;
         align-self: flex-start;
+    
 
 
     }
