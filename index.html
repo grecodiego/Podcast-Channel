@@ -4,18 +4,19 @@
 <head>
    <link rel="stylesheet" href="styles.css">
    <meta name="viewport" content="width=device-width"/>
+   <script src="https://kit.fontawesome.com/1ed068a928.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
    <div class="box-general">
-      <header class="width100 padding16">
+      <header class="width100 ">
          <img height="24px" src="images/logo.svg" alt="Logo" class="logo">
          <input for="ulNavHeader" type="checkbox" class="checkbox-menu" id="checkbox-menu">
          <ul class="ulNavHeader">
-            <li class="list-nav"><a href="">EPISODIOS</a> </li>
-            <li class="list-nav"><a href="">NOSOTROS</a> </li>
-            <li class="list-nav"><a href="">ENTREVISTAS</a> </li>
-            <li class="list-nav"><a href="">TÓPICOS</a> </li>
+            <a class="linksSections" href="#episodios"><li class="list-nav">EPISODIOS </li></a>
+            <a class="linksSections" href="#deDonde"><li class="list-nav">NOSOTROS</li></a>
+            <a class="linksSections" href="#topicos"><li class="list-nav">TÓPICOS</li></a>
+            <a class="linksSections" href="#entrevistas"><li class="list-nav">ENTREVISTAS </li></a>
          </ul>
          <label class="checkbox-menu-label" for="checkbox-menu">
             <div class="container-menu">
@@ -26,32 +27,44 @@
          </label>
       </header>
 
-      <section class="section-presentacion width100 padding16">
+      <section class="section-presentacion width100 paddingGenerico">
          <h1 class="titulo1">Hello&nbsp<span id="world">world</span> <span>&nbsp</span> pale blue dot <span
                id="puntoTachado">.</span></h1>
-         <p class="parrafo1 maxWidthParrafo">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada
+         <p class="parrafo1 Parrafo">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada
             15 días.</p>
          <button class="botonVerdeAgua">CONOCÉ MÁS</button>
       </section>
       <div class="fondo-recorte">
-         <section class="section-spotify">
-            <h1 class="titulo2 color-white padding16 paddingbottom8">Episodios</h1>
-            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         <section class="section-spotify" id="episodios">
+            <h1 class="titulo2 color-white paddingGenerico paddingbottomEpisodios">Episodios</h1>
+            <!-- <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+            width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <!-- <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
+            <iframe class="iframe" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+            width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             <iframe class="iframe" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
          </section>
       </div>
-      <section class="section-deDondeVenimos width100 padding16">
+      <section class="section-deDondeVenimos width100 paddingGenerico" id="deDonde">
          <img src="images/phone1.png" alt="phone" class="imgPhone">
-         <h1 class="titulo2 color-black paddingbottom8">De dónde venimos</h1>
-         <p class="parrafo1 padding16">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+         <h1 class="titulo2 color-black paddingbottomEpisodios maxWidth">De dónde venimos</h1>
+         <p class="parrafo1 maxWidth">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
             <br> <br>
             Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.  </p>
       </section>
 
-      <section class="section-fotos width100 ">
-         <h1 class="titulo2 padding16 paddingbottom36">Invitadas/os estelares</h1>
+      <section class="section-deDondeVenimos-desktop width100 ">
+         <img src="images/phone1.png" alt="phone" class="imgPhone">
+         <div class="box-deDondeVenimos"><h1 class="titulo2 color-black paddingbottomEpisodios maxWidth">De dónde venimos</h1>
+         <p class="parrafo1 maxWidth">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+            <br> <br>
+            Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.  </p></div>
+      </section>
+      
+      <section class="section-fotos width100 " id="entrevistas">
+         <h1 class="titulo2 paddingGenerico paddingbottomInvitadas">Invitadas/os estelares</h1>
          <img src="images/grace-hopper.png" alt="Grace Hopper" class="imagenes">
          <img src="images/Katie-Bouman.png" alt="Katie Bouman" class="imagenes" >
          <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton" class="imagenes">
@@ -60,19 +73,27 @@
          <img src="images/susan-kare.png" alt="Susan Kare" class="imagenes">
 
       </section>
-      <section class="section-algunosDeNuestrosTemas width100 padding16" >
-         <h1 class="titulo2 paddingTop48 paddingbottom36">Algunos de nuestros temas</h1>
+      <section class="section-algunosDeNuestrosTemas width100 paddingGenerico" id="topicos">
+         <h1 class="titulo2 paddingTop48 paddingbottomInvitadas">Algunos de nuestros temas</h1>
          <div class="contenedor-item"><img src="images/icon1.svg" alt="Trabajo remoto" class="item"><h3 class="desc-item">Trabajo remoto</h3></div>
          <div class="contenedor-item"><img src="images/icon2.svg" alt="Repensando la programación"class="item"><h3 class="desc-item">Repensando la programación</h3></div>
          <div class="contenedor-item"><img src="images/icon3.svg" alt="Bases de código"class="item"><h3 class="desc-item">Bases del código</h3></div>
          <div class="contenedor-item"><img src="images/icon4.svg" alt="Seguridad informática"class="item"><h3 class="desc-item">Seguridad informática</h3></div>
       </section>
-      <div class="fondo-recorte2"><section class="section-ultimasNovedades width100">
+      <div class="fondo-recorte2"><section class="section-ultimasNovedades width100 paddingGenerico">
          <h1 class="titulo2 color-white textoNovedades">¿Querés las últimas novedades?</h1>
-         <button class="botonVerdeAgua marginBotton25">ESCUCHÁ LOS EPISODIOS</button>
+         <button class="botonVerdeAgua marginBotton15 alinearseCentro">ESCUCHÁ LOS EPISODIOS</button>
       </section></div>
 
-      <footer></footer>
+      <footer class="width100"> <h1 class="textoFooter">© 2019— Hello blue pale dot</h1>
+         <div class="redesSociales width100">
+            <a href="https://www.spotify.com/"><i class="fab fa-spotify sn linksRedes"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram sn linksRedes"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter sn linksRedes"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook sn linksRedes"></i></a>
+            <a href="https://web.telegram.org/"><i class="fab fa-telegram sn linksRedes"></i></a>
+         </div>
+      </footer>
    </div>
 </body>
 
