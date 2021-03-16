@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap'); */
-
 
 
 * {
@@ -13,9 +10,19 @@
 
 }
 
+html {
+    width: 100%;
+}
 body {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+.linksSections{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
   .linksSections:link, .linksSections:visited, .linksSections:active {
         text-decoration: none;
@@ -304,6 +311,7 @@ iframe {
 .imgPhone {
     display: flex;
     min-width: 315px;
+    height: auto;
     max-width: 60%;
     transform: translateY(-120px);
     margin-bottom: -80px;
@@ -436,7 +444,7 @@ footer {
 
 
 
-@media only screen and (min-width: 600px) { 
+@media only screen and (min-width: 768px) { 
     
 
 
