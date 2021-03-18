@@ -23,11 +23,23 @@ body {
     height: 100%;
     width: 100%;
 }
-.linksSections:link, .linksSections:visited, .linksSections:active {
+.linksSections:link, .linksSections:visited {
         text-decoration: none;
         font-family: 'IBM Plex Mono', monospace;
         color: #FFFFFF;
 
+}
+.linksSections:hover {
+
+    text-decoration: line-through;
+    color: #00F3BB 100%;
+}
+
+
+.linksSections:active {
+
+    text-decoration: line-through;
+    color: #060A24 560%;
 }
 
 .width100 {
@@ -111,9 +123,6 @@ header {
 
 }
 
-.list-nav:hover {
-    background-color: rgba(255, 255, 255, 0.486);
-}
 
 
 
@@ -180,6 +189,12 @@ header {
     height: 48px;
     width: 100%;
     background: #00F3BB;
+    transition: all 1s ease;
+
+}
+.botonVerdeAgua:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+
 
 }
 .botonVerdeLink {
@@ -193,6 +208,9 @@ header {
     font-weight: bold;
     color: black;
 
+}
+.botonVerdeLink:hover {
+    color: white;
 }
 
 .botonVerdeLink, .botonVerdeLink:hover, .botonVerdeLink:active, .botonVerdeLink:visited{
@@ -283,7 +301,7 @@ header {
     width: 100%;
     height: auto;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-path: polygon(100vw 0, 100vw 97vh, 0 100vh, 0 3vh);
+    clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 3%);
 
 }
 
@@ -325,7 +343,6 @@ iframe {
     display: flex;
     min-width: 315px;
     height: auto;
-    max-height: 60%;
     max-width: 60%;
     transform: translateY(-120px);
     margin-bottom: -80px;
@@ -447,7 +464,8 @@ footer {
 }
 
 
-.section-deDondeVenimos-desktop {display: none;
+.section-deDondeVenimos-desktop {
+    display: none;
 
 }
 
@@ -539,9 +557,9 @@ footer {
     .section-spotify {
         flex-direction: row;
         flex-wrap: wrap;
-        clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
         justify-content: space-around;
         padding-top: 120px;
+        height: auto;
 
     }
 
@@ -612,6 +630,9 @@ footer {
         
         color: black;
     }
+
+
+
     header {
         padding-right: 100px;
     }
