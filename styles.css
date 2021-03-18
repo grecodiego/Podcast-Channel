@@ -39,7 +39,7 @@ body {
 .linksSections:active {
 
     text-decoration: line-through;
-    color: #060A24 560%;
+    color: #060A24 56%;
 }
 
 .width100 {
@@ -97,7 +97,7 @@ header {
     display: inline-block;
     position: absolute;
     flex-direction: column;
-    background-color: #0000EC;
+    background: #0000EC;
     /* Caract. animación */
     transition: all 1s ease-in-out;
     height: 224px;
@@ -189,11 +189,11 @@ header {
     height: 48px;
     width: 100%;
     background: #00F3BB;
-    transition: all 1s ease;
+    transition: all 0.5s ease-in-out;
 
 }
 .botonVerdeAgua:hover {
-    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
 
 
 }
@@ -244,7 +244,7 @@ header {
 
 
 .checkbox-menu:checked ~ .ulNavHeader {
-    left: -0%;
+    left: 0%;
     visibility: visible;
 
 }
@@ -300,7 +300,7 @@ header {
     top: 0;
     width: 100%;
     height: auto;
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 3%);
 
 }
@@ -398,7 +398,7 @@ margin-bottom: 36px;
     top: 0;
     width: 100%;
     height: auto;
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0 100%);
 
 }
@@ -493,7 +493,7 @@ footer {
         margin-right: 100px;
         padding: 0%;
         align-items: center;
-        background-color: inherit;
+        background: inherit;
         right: 0;
         justify-content: space-between;
    
@@ -646,7 +646,7 @@ footer {
         top: 0;
         width: 100%;
         height: auto;
-        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
         clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
     
     }
