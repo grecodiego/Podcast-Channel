@@ -22,24 +22,29 @@ body {
     align-items: center;
     height: 100%;
     width: 100%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: black;
+    padding-left: 16px;
+
 }
-.linksSections:link, .linksSections:visited {
+.ulNavHeader .linksSections:link, .ulNavHeader .linksSections:visited {
         text-decoration: none;
-        font-family: 'IBM Plex Mono', monospace;
         color: #FFFFFF;
 
 }
-.linksSections:hover {
+.ulNavHeaderDesktop .linksSections:link, .ulNavHeaderDesktop .linksSections:visited {
+    text-decoration: none;
 
+}
+.linksSections:hover {
     text-decoration: line-through;
-    color: #00F3BB 100%;
+    color: #00F3BB;
 }
 
 
-.linksSections:active {
-
+.ulNavHeaderDesktop .linksSections:active {
     text-decoration: line-through;
-    color: #060A24 56%;
+    color: rgba(6,10,36,0.56);
 }
 
 .width100 {
@@ -75,7 +80,6 @@ body {
 }
 
 header {
-    /* Caract. caja */
     height: 44px;
     background: #FFFFFF;
     display: flex;
@@ -93,19 +97,16 @@ header {
     display: none;
 }
 .ulNavHeader {
-    /* Caract. contenedor */
     display: inline-block;
     position: absolute;
     flex-direction: column;
     background: #0000EC;
-    /* Caract. animación */
     transition: all 1s ease-in-out;
     height: 224px;
     width: 1440px;
     top: 44px;
     left: 100%;
     visibility: visible;
-    /* Caract. texto */
     font-family: 'IBM Plex Mono', monospace;
     font-size: 16px;
 
@@ -119,20 +120,14 @@ header {
     font-size: 16px;
     align-items: center;
     width: 100%;
-    padding-left: 16px;
+
 
 }
-
-
-
-
-
 
 
 .espaciadorHeader {
     display: flex;
 }
-
 
 
 .section-presentacion {
@@ -167,7 +162,7 @@ header {
 }
 
 #puntoTachado {
-    color: blue;
+    color: black;
 }
 
 .parrafo1 {
@@ -189,14 +184,14 @@ header {
     height: 48px;
     width: 100%;
     background: #00F3BB;
-    transition: all 0.5s ease-in-out;
-
+    border: none;
 }
+
 .botonVerdeAgua:hover {
     background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-
-
+    transition: all 3s ease-in-out;
 }
+
 .botonVerdeLink {
     display: flex;
     width: 100%;
@@ -207,6 +202,7 @@ header {
     font-size: 16px;
     font-weight: bold;
     color: black;
+    
 
 }
 .botonVerdeLink:hover {
@@ -248,7 +244,6 @@ header {
     visibility: visible;
 
 }
-
 
 
 .linea {
@@ -387,7 +382,7 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 flex-direction: column;
-width: 260px;
+width: 250px;
 height: auto;
 margin-bottom: 36px;
 }
@@ -423,7 +418,6 @@ margin-bottom: 36px;
 
 
 footer {
-    /* Caract. contenedor */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -505,7 +499,6 @@ footer {
         padding-left: 0%;
         padding-right: 0%;
         font-size: 16px;
-        padding-left: 24px;
     }
 
 
@@ -584,13 +577,11 @@ footer {
     footer {
     padding-right: 100px;
     padding-left: 100px;
-    justify-content: space-around;
+    justify-content: space-between;
     }
 
 
     .textoFooter {
-    /* Caract. texto */
-
     padding-bottom: 0;
 
     }
@@ -603,7 +594,7 @@ footer {
     }
     .imagenes{
         display: flex;
-        max-width:33%;
+        max-width:33.33%;
         height:auto;
        }
 
@@ -623,14 +614,9 @@ footer {
         display: flex;
 
     }
-    .list-nav {
+    .list-nav:not(:first-child) {
         padding-left: 48px;
     }
-    .linksSections:link, .linksSections:visited, .linksSections:active {
-        
-        color: black;
-    }
-
 
 
     header {
@@ -650,4 +636,10 @@ footer {
         clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
     
     }
+    
+    #puntoTachado {
+        color: blue;
+    }
+
+
 }
