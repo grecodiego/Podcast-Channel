@@ -17,35 +17,35 @@ body {
     justify-content: center;
     width: 100%;
 }
-.linksSections{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    font-family: 'IBM Plex Mono', monospace;
-    color: black;
-    padding-left: 16px;
 
-}
-.ulNavHeader .linksSections:link, .ulNavHeader .linksSections:visited {
+
+
+.ulNavHeader .linksSections, .ulNavHeader .linksSections:visited {
         text-decoration: none;
         color: #FFFFFF;
 
 }
-.ulNavHeaderDesktop .linksSections:link, .ulNavHeaderDesktop .linksSections:visited {
+.ulNavHeaderDesktop .linksSections, .ulNavHeaderDesktop .linksSections:visited {
     text-decoration: none;
 
 }
+.linksSections:active {
+    text-decoration: line-through;
+    color: rgba(6,10,36,0.56);
+}
+
 .linksSections:hover {
     text-decoration: line-through;
     color: #00F3BB;
 }
 
+.botonVerdeAgua:hover {
+    background: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+    transition: all 1s ease-in;
 
-.ulNavHeaderDesktop .linksSections:active {
-    text-decoration: line-through;
-    color: rgba(6,10,36,0.56);
 }
+
+
 
 .width100 {
     width: 100%;
@@ -115,18 +115,21 @@ header {
 .list-nav {
 
     display: flex;
-    font-family: 'IBM Plex Mono', monospace;
     height: 25%;
     font-size: 16px;
     align-items: center;
     width: 100%;
 
-
 }
-
-
-.espaciadorHeader {
+.linksSections{
     display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: black;
+    padding-left: 16px;
+
 }
 
 
@@ -183,14 +186,14 @@ header {
     display: flex;
     height: 48px;
     width: 100%;
-    background: #00F3BB;
+    background-color: #00F3BB;
     border: none;
+
+
 }
 
-.botonVerdeAgua:hover {
-    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-    transition: all 3s ease-in-out;
-}
+
+
 
 .botonVerdeLink {
     display: flex;
@@ -333,6 +336,8 @@ iframe {
     position: relative;
     width: 100%;
     height: auto;
+
+
 }
 .imgPhone {
     display: flex;
@@ -359,6 +364,7 @@ iframe {
 
 .section-algunosDeNuestrosTemas{
     display: flex;
+
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -376,13 +382,14 @@ iframe {
 
 .item {
     height: 130px;
+    margin-bottom: 29px;
 }
 .contenedor-item {
 display: flex;
 align-items: center;
 justify-content: flex-start;
 flex-direction: column;
-width: 250px;
+width: 200px;
 height: auto;
 margin-bottom: 36px;
 }
@@ -392,7 +399,7 @@ margin-bottom: 36px;
     position: relative;
     top: 0;
     width: 100%;
-    height: auto;
+    max-height: 300px;
     background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0 100%);
 
@@ -404,7 +411,9 @@ margin-bottom: 36px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 25%;
+    height: auto;
+    padding-top: 20%;
+
 }
 .textoNovedades {
     display: flex;
@@ -412,7 +421,7 @@ margin-bottom: 36px;
     text-align: center;
     margin-bottom: 36PX;
     justify-content: center;
-    height: 232px;
+    height: auto;
 }
 
 
@@ -444,9 +453,9 @@ footer {
 .linksRedes {
     color: black;
 }
-.linksRedes:link, .linksRedes:visited, .linksRedes:active {
+/* .linksRedes:link, .linksRedes:visited, .linksRedes:active {
     text-decoration: none;
-}
+} */
 
 .textoFooter {
     display: flex;
@@ -571,6 +580,7 @@ footer {
     .box-deDondeVenimos{
         display: flex;
         flex-direction: column;
+        transform: translateY(-90px);
         
     }
 
@@ -626,6 +636,11 @@ footer {
         display: none;
     }
 
+
+    .section-algunosDeNuestrosTemas{
+        justify-content: space-between;
+    }
+
     .fondo-recorte {
         display: flex;
         position: relative;
@@ -642,4 +657,26 @@ footer {
     }
 
 
+   .ulNavHeaderDesktop .linksSections:active {
+    text-decoration: line-through;
+    color: rgba(6,10,36,0.56);
+} 
+
+.fondo-recorte2 {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0 100%);
+
+}
+.section-ultimasNovedades {
+    padding-top: 5%;
+
+    min-height: 400px;
+
+
+}
 }
