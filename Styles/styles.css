@@ -423,7 +423,7 @@ footer {
 
 .redes-sociales {
     display: flex;
-    justify-content: inherit;
+    justify-content: space-between;
     align-items: center;
     max-width: 230px;
 
@@ -677,6 +677,11 @@ footer {
         margin-bottom: 36px;
         text-align: left;
     }
+
+    .redes-sociales {
+        justify-content: inherit;
+    }
+
 }
 
 @media only screen and (min-width:321px) and (max-width:768px) {
