@@ -1,0 +1,220 @@
+/*    DESKTOP & TABLET CSS  */
+
+@media only screen and (min-width: 769px) {
+	.section-de-donde-venimos {
+		display: none;
+	}
+
+	header {
+		height: 80px;
+		align-items: center;
+		padding-left: 100px;
+		padding-right: 100px;
+		max-width: 1280px;
+	}
+
+	footer {
+		padding-right: 100px;
+		padding-left: 100px;
+		justify-content: space-between;
+	}
+
+	.ul-nav-header {
+		font-size: 16px;
+		margin-right: 100px;
+		padding: 0%;
+		align-items: center;
+		background: inherit;
+		right: 0;
+		justify-content: space-between;
+	}
+
+	.links-sections {
+		text-decoration: none;
+	}
+	.links-sections:hover {
+		text-decoration: line-through;
+		color: #00f3bb;
+	}
+
+	.links-sections:active {
+		text-decoration: line-through;
+		color: rgba(6, 10, 36, 0.56);
+	}
+
+	.list-nav {
+		justify-content: flex-end;
+		display: flex;
+		padding-left: 0%;
+		padding-right: 0%;
+		font-size: 16px;
+	}
+
+	.section-presentacion {
+		padding-top: 120px;
+	}
+
+	.main-title {
+		font-size: 64px;
+		font-weight: lighter;
+		color: #060a24;
+	}
+
+	.paragraph-presentation {
+		font-size: 16px;
+		font-weight: normal;
+		max-width: 628px;
+		margin-bottom: 56px;
+	}
+
+	.btn {
+		font-size: 18px;
+		width: 288px;
+		height: 56px;
+		margin-bottom: 0;
+	}
+
+	.logo {
+		height: 36px;
+		width: 36px;
+	}
+
+	.icono-menu {
+		align-items: center;
+		display: none;
+	}
+
+	.checkbox-menu-label {
+		display: none;
+	}
+
+	.section-spotify {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-top: 40px;
+		height: auto;
+	}
+
+	.section-de-donde-venimos-desktop {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-left: 100px;
+		padding-right: 100px;
+		align-items: center;
+	}
+
+	.box-de-donde-venimos {
+		display: flex;
+		flex-direction: column;
+		transform: translateY(-90px);
+	}
+
+	.text-footer {
+		padding-bottom: 0;
+	}
+
+	.section-fotos {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.imagenes {
+		display: flex;
+		max-width: 33.33%;
+		height: auto;
+	}
+
+	.padding-generico {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+
+	.padding-bottome-pisodios {
+		margin-top: 10%;
+		padding-bottom: 26px;
+	}
+
+	.padding-bottom-invitadas {
+		padding-bottom: 36px;
+	}
+
+	.ul-nav-header-desktop {
+		display: flex;
+	}
+
+	.list-nav:not(:first-child) {
+		padding-left: 48px;
+	}
+
+	.ul-nav-header {
+		display: none;
+	}
+
+	.section-algunos-de-nuestros-temas {
+		justify-content: space-around;
+	}
+
+	.fondo-recorte {
+		display: flex;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: auto;
+		background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+		clip-path: polygon(100% 0, 100% 92%, 0 100%, 0 8%);
+	}
+
+	#punto-tachado {
+		color: blue;
+	}
+
+	.ul-nav-header-desktop .links-sections:active {
+		text-decoration: line-through;
+		color: rgba(6, 10, 36, 0.56);
+	}
+
+	.fondo-recorte2 {
+		display: flex;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: auto;
+		background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+		clip-path: polygon(0% 19%, 100% 0%, 100% 100%, 0 100%);
+	}
+
+	.section-ultimas-novedades {
+		padding-top: 5%;
+		min-height: 400px;
+	}
+
+	.paragraph {
+		display: none;
+	}
+
+	.paragraph-desktop {
+		display: inline-block;
+		font-family: 'IBM Plex Mono', monospace;
+		font-size: 14px;
+		color: #060a24;
+		letter-spacing: 0;
+		line-height: 22px;
+		margin-bottom: 36px;
+		text-align: left;
+	}
+
+	.redes-sociales {
+		justify-content: inherit;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+	iframe {
+		max-width: 1280px;
+		width: 100%;
+	}
+}
