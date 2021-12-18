@@ -64,14 +64,13 @@
 		font-size: 16px;
 		font-weight: normal;
 		max-width: 628px;
-		margin-bottom: 56px;
 	}
 
 	.btn {
 		font-size: 18px;
 		width: 288px;
 		height: 56px;
-		margin-bottom: 0;
+		margin-bottom: 5%;
 	}
 
 	.logo {
